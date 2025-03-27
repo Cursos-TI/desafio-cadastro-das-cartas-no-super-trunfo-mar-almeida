@@ -15,6 +15,8 @@ int main() {
     float area1;
     float PIB1;
     int PontosTuristicos1;
+    float DensPop1;
+    float PIBperCAP1;
 
     char nome2[50];
     char cidade2[50];
@@ -23,48 +25,55 @@ int main() {
     float area2;
     float PIB2;
     int PontosTuristicos2;
+    float DensPop2;
+    float PIBperCAP2;
 
-    printf("Nome do Estado 1:\n");
+    printf("Nome do Estado 1: ");
     scanf("%s", &nome1);
 
-    printf("Nome da Cidade 1:\n");
+    printf("Nome da Cidade 1: ");
     scanf("%s", &cidade1);
 
-    printf("Código da Cidade 1:\n");
+    printf("Código da Cidade 1: ");
     scanf("%s", &codigo1);
 
-    printf("Digite a População 1:\n");
+    printf("Digite a População 1: ");
     scanf("%d", &populacao1);
 
-    printf("Digite a Área 1:\n");
+    printf("Digite a Área 1: ");
     scanf("%f", &area1);
 
-    printf("Digite o PIB1:\n");
+    printf("Digite o PIB1: ");
     scanf("%f", &PIB1);
 
-    printf("Digite o número de pontos turísticos1:\n");
+    printf("Digite o número de pontos turísticos1: ");
     scanf("%d", &PontosTuristicos1);
 
-    printf("Nome do Estado 2:\n");
+    printf("Nome do Estado 2: ");
     scanf("%s", &nome2);
 
-    printf("Nome da Cidade 2:\n");
+    printf("Nome da Cidade 2: ");
     scanf("%s", &cidade2);
 
-    printf("Código da Cidade 2:\n");
+    printf("Código da Cidade 2: ");
     scanf("%s", &codigo2);
 
-    printf("Digite a População 2:\n");
+    printf("Digite a População 2: ");
     scanf("%d", &populacao2);
 
-    printf("Digite a Área 2:\n");
+    printf("Digite a Área 2: ");
     scanf("%f", &area2);
 
-    printf("Digite o PIB2:\n");
+    printf("Digite o PIB2: ");
     scanf("%f", &PIB2);
 
-    printf("Digite o número de pontos turísticos2:\n");
+    printf("Digite o número de pontos turísticos2: ");
     scanf("%d", &PontosTuristicos2);
+
+    DensPop1 = (float) populacao1 / area1;
+    PIBperCAP1 = (float) PIB1 / populacao1;
+    DensPop2 = (float) populacao2 / area2;
+    PIBperCAP2 = (float) PIB2 / populacao2;
 
     printf("Estado1: %s\n", nome1);
     printf("Cidade1: %s\n", cidade1);
@@ -73,6 +82,8 @@ int main() {
     printf("Área1: %.2f\n", area1);
     printf("PIB1: %.2f\n", PIB1);
     printf("PontosTuristicos1: %d\n", PontosTuristicos1);
+    printf("DensidadePopulacional1: %.8f\n", DensPop1);
+    printf("PIBperCapita1: %.8f\n", PIBperCAP1);
 
     printf("Estado2: %s\n", nome2);
     printf("Cidade2: %s\n", cidade2);
@@ -81,6 +92,8 @@ int main() {
     printf("Área2: %.2f\n", area2);
     printf("PIB2: %.2f\n", PIB2);
     printf("PontosTuristicos2: %d\n", PontosTuristicos2);
+    printf("DensidadePopulacional2: %.8f\n", DensPop2);
+    printf("PIBperCapita2: %.8f\n", PIBperCAP2);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
