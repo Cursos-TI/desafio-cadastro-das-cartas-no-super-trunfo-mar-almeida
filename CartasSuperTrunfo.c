@@ -8,25 +8,25 @@
 
 int main() {
 
-    char nome1[50];
-    char cidade1[50];
-    char codigo1[50];
-    int populacao1;
-    float area1;
-    float PIB1;
-    int PontosTuristicos1;
-    float DensPop1;
-    float PIBperCAP1;
+    char nome1[50]; // Parana
+    char cidade1[50]; // Curitiba
+    char codigo1[50]; // PR01
+    int populacao1; // 11444380
+    float area1; // 199315.00
+    float PIB1; // 718900000000 
+    int PontosTuristicos1; //350
+    float DensPop1; // = Pop / Area
+    float PIBperCAP1; // = PIB / Pop
 
-    char nome2[50];
-    char cidade2[50];
-    char codigo2[50];
-    int populacao2;
-    float area2;
-    float PIB2;
-    int PontosTuristicos2;
-    float DensPop2;
-    float PIBperCAP2;
+    char nome2[50]; // Santa Catarina
+    char cidade2[50]; // Florianopolis
+    char codigo2[50]; // SC01
+    int populacao2; // 8058441
+    float area2; // 195346.00
+    float PIB2; // 531400000000
+    int PontosTuristicos2; //600
+    float DensPop2; // = Pop / Area
+    float PIBperCAP2; // = PIB / Pop
 
     printf("Nome do Estado 1: ");
     scanf("%s", &nome1);
@@ -82,8 +82,8 @@ int main() {
     printf("Área1: %.2f\n", area1);
     printf("PIB1: %.2f\n", PIB1);
     printf("PontosTuristicos1: %d\n", PontosTuristicos1);
-    printf("DensidadePopulacional1: %.8f\n", DensPop1);
-    printf("PIBperCapita1: %.8f\n", PIBperCAP1);
+    printf("DensidadePopulacional1: %.2f\n", DensPop1);
+    printf("PIBperCapita1: %.2f\n", PIBperCAP1);
 
     printf("Estado2: %s\n", nome2);
     printf("Cidade2: %s\n", cidade2);
@@ -92,8 +92,8 @@ int main() {
     printf("Área2: %.2f\n", area2);
     printf("PIB2: %.2f\n", PIB2);
     printf("PontosTuristicos2: %d\n", PontosTuristicos2);
-    printf("DensidadePopulacional2: %.8f\n", DensPop2);
-    printf("PIBperCapita2: %.8f\n", PIBperCAP2);
+    printf("DensidadePopulacional2: %.2f\n", DensPop2);
+    printf("PIBperCapita2: %.2f\n", PIBperCAP2);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
