@@ -5,9 +5,9 @@ int main() {
     char nome1[50]; // Parana
     char cidade1[50]; // Curitiba
     char codigo1[50]; // PR01
-    int populacao1; // 11444380
-    float area1; // 199315.00
-    double PIB1; // 718900000000 
+    int populacao1; // 11444380 hab
+    float area1; // 199307.92 km2
+    double PIB1; // R$ 614611000000
     int PontosTuristicos1; //350
     float DensPop1; // = Pop / Area
     float PIBperCAP1; // = PIB / Pop
@@ -16,9 +16,9 @@ int main() {
     char nome2[50]; // Santa Catarina
     char cidade2[50]; // Florianopolis
     char codigo2[50]; // SC01
-    int populacao2; // 8058441
-    float area2; // 195346.00
-    double PIB2; // 531400000000
+    int populacao2; // 8058441 hab
+    float area2; // 95730.69 km2
+    double PIB2; // R$ 466274000000
     int PontosTuristicos2; //600
     float DensPop2; // = Pop / Area
     float PIBperCAP2; // = PIB / Pop
@@ -27,11 +27,11 @@ int main() {
     printf("Nome do Estado 1: ");
     scanf("%s", &nome1);
 
+    printf("Código da Carta 1: ");
+    scanf("%s", &codigo1);
+    
     printf("Nome da Cidade 1: ");
     scanf("%s", &cidade1);
-
-    printf("Código da Cidade 1: ");
-    scanf("%s", &codigo1);
 
     printf("Digite a População 1: ");
     scanf("%d", &populacao1);
@@ -48,11 +48,11 @@ int main() {
     printf("Nome do Estado 2: ");
     scanf("%s", &nome2);
 
+    printf("Código da Carta 2: ");
+    scanf("%s", &codigo2);
+
     printf("Nome da Cidade 2: ");
     scanf("%s", &cidade2);
-
-    printf("Código da Cidade 2: ");
-    scanf("%s", &codigo2);
 
     printf("Digite a População 2: ");
     scanf("%d", &populacao2);
